@@ -54,30 +54,6 @@ class WafDetector:
             return None
     
     """
-    from a requests.Response object to text
-    """
-    def _text_from_response(self, resp: requests.Response) -> str:
-        textParts = []
-
-        try:
-            textParts.append("\n".join(f"{k}: {v}" for k, v in resp.headers.items()))
-        except Exception:
-            pass
-        
-        try:
-            textParts.append(str(resp.status_code))
-        except Exception:
-            pass
-
-        # Body resp
-        try:
-            textParts.append(resp.text or "")
-        except Exception:
-            pass
-
-        return '\n'.join(textParts)
-    
-    """
     Detect headers, cookie ecct of WAFs
     """
     def detect(self, url: str) -> Dict[str, any]:
@@ -176,3 +152,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
