@@ -31,7 +31,7 @@ When contributing, please include tests for new fingerprints or behaviors.
 
 License
 
-This project is released under the MIT License. Replace the text below with your name and year.
+This project is released under the MIT License. 
 
 MIT License
 
