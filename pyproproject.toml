@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "waffer"
+version = "1.0.0"
+description = "A lightweight and educational WAF detection tool for passive fingerprinting."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+  "requests>=2.31.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/SSHpectator/waffer"
+Issues = "https://github.com/SSHpectator/waffer/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["waffer*"]
