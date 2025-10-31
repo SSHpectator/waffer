@@ -33,14 +33,7 @@ WAF_FINGERPRINTS = {
         "body": [r"Access Denied - F5"],
         "status_codes": []
     },
-    # ... aggiungi altri fingerprint qui ...
 }
-
-# payload usato solo per active test (NON troppo aggressivo)
-ACTIVE_TEST_PAYLOADS = [
-    {"param": "test", "value": "1' OR '1'='1"},  # innocuo ma "SQL-like"
-    {"param": "x", "value": "<script>alert(1)</script>"}  # XSS-like string
-]
 
 
 class WafDetector:
@@ -181,4 +174,5 @@ def main():
     print(json.dumps(res, indent=2, ensure_ascii=False))
 
 if __name__ == "__main__":
+
     main()
