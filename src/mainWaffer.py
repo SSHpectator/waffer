@@ -140,7 +140,7 @@ import argparse
 def main():
     parser = argparse.ArgumentParser(description="WAF Detector")
     parser.add_argument("url", help="URL target (include scheme e.g. https://example.com)")
-    parser.add_argument("--active", action="store_true", help="Esegui test attivo (rischio legale: usa con permesso)")
+    parser.add_argument("--active", action="store_true", help="Perform an active Test <-- noisy (IN CONSTRUCTION)")
     parser.add_argument("--timeout", type=float, default=10.0)
     args = parser.parse_args()
 
@@ -152,4 +152,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
