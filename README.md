@@ -1,40 +1,42 @@
-# waffer  ( WRITING THE README.md)
+# waffer
 
-A lightweight Web Application Firewall (Waf) detection utility for passive and conservative active fingerprinting.
+Waffer is a Web Application Firewall (WAF) detection utility for passive and active active WAF fingerprinting.
 
 Warning: This project is for educational and defensive use only. Do not run active tests against systems you do not own or do not have explicit authorization to test.
 
-Features
+## How WAF detection is performed
 
-Passive fingerprinting using HTTP headers, cookies, status codes and response body patterns.
+Passive WAF fingerprinting using HTTP headers, cookies, status codes and response body patterns of known WAF.
+Passive detection are performed with HEAD/GET requests.
 
-Optional conservative active tests (disabled by default) to increase detection confidence. ( WORKING ON IT )
-
-
-Passive detection (normal GET/HEAD requests) is low risk but still generates traffic — respect robots.txt and rate limits.
+## Future update
+In the future there will be an active detection method, which will be disabled by default, to increase detection confidence. ( WORKING ON IT )
 
 This project is intended for security professionals, developers and researchers.
 
-Contributing
+## Contributing
 
-Contributions are welcome! Suggested ways to help:
+Contributions are welcome! 
+Contributors will be displayed in a contributor list!
+<br>
 
-Add more reliable fingerprints (headers/cookies/body/status) for additional Waf vendors.
+- Suggested ways to help:
 
-Improve scoring and reduce false positives.
+  - Add more reliable fingerprints (headers/cookies/body/status) for additional Waf vendors.
 
-Add async support with httpx and asyncio for scanning many targets.
+  - Improve scoring and reduce false positives.
 
-Add unit tests and CI (GitHub Actions).
+  - Add async support with httpx and asyncio for scanning many targets.
+
+  - Add unit tests and CI (GitHub Actions).
 
 When contributing, please include tests for new fingerprints or behaviors.
 
-License
+## License
 
 This project is released under the MIT License. 
 
-MIT License
-
+## MIT License
 
 Copyright (c) 2025 <SSHpectator>
 
@@ -45,9 +47,7 @@ in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
+ - Non-Authorized scanning. 
 
-
-[...]
-Acknowledgements
-
-Inspired by community fingerprinting projects and tools. Use responsibly.
+## Acknowledgements
+Tool built by an hacker, helped by hackers, for hackers. Use responsibly!
