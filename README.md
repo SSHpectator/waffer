@@ -7,7 +7,7 @@ Warning: This project is for educational and defensive use only. Do not run acti
 ## How WAF detection is performed
 
 Passive WAF fingerprinting using HTTP headers, cookies, status codes and response body patterns of known WAF.
-Passive detection are performed with HEAD/GET requests.
+Passive detection is performed with HEAD/GET requests.
 
 ## Future update
 In the future there will be an active detection method, which will be disabled by default, to increase detection confidence. ( WORKING ON IT )
