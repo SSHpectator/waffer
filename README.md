@@ -1,6 +1,6 @@
 # waffer
 
-Waffer is a Web Application Firewall (WAF) detection utility for passive and active active WAF fingerprinting.
+Waffer is a Web Application Firewall (WAF) detection utility for passive and active WAF fingerprinting.
 
 Warning: This project is for educational and defensive use only. Do not run active tests against systems you do not own or do not have explicit authorization to test.
 
